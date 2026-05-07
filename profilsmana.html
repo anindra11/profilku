@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil | SMA Negeri Ambulu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            color: #1c1e21;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(rgba(20, 40, 80, 0.8), rgba(20, 40, 80, 0.8)), 
+                        url('https://images.unsplash.com/photo-1523050853063-bd303c004112?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -40px auto 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section h2 {
+            color: #004a99;
+            border-bottom: 3px solid #ffd700;
+            display: inline-block;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+        }
+
+        /* --- BAGIAN BARU UNTUK FOTO --- */
+        .school-photo-container {
+            text-align: center;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .school-photo {
+            width: 100%;
+            max-width: 600px; /* Ukuran maksimal foto di PC */
+            height: auto;
+            border: 4px solid white; /* Frame putih */
+        }
+        /* ----------------------------- */
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .stat-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            border-color: #004a99;
+        }
+
+        .stat-card h3 {
+            color: #004a99;
+            margin-bottom: 5px;
+        }
+
+        .address-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #004a99;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            font-size: 0.85rem;
+            background: #2c3e50;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.6rem; }
+            .container { width: 92%; padding: 20px; }
+            .school-photo { width: 100%; } /* Di HP foto full width */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SMA Negeri Ambulu</h1>
+        <p>"Ganesha Abhipraya Jaya"</p>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>Tentang Kami</h2>
+            <p>SMA Negeri Ambulu (SMANA) adalah institusi pendidikan menengah atas yang terletak di Jember bagian selatan. Sebagai salah satu sekolah unggulan, SMANA terus berinovasi dalam mencetak lulusan yang cerdas secara intelektual dan berkarakter kuat.</p>
+        </div>
+
+        <div class="section school-photo-container">
+            <img src="https://images.unsplash.com/photo-1541339907198-e08756ebafe3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Foto Gedung SMA Negeri Ambulu" class="school-photo">
+            <p style="font-size: 0.8rem; color: #777; margin-top: 5px;">Gedung Utama SMANA (Gambar Contoh)</p>
+        </div>
+        <div class="section">
+            <h2>Visi Sekolah</h2>
+            <p><em>"Terwujudnya insan yang beriman, bertaqwa, berprestasi, berwawasan iptek, dan ramah lingkungan."</em></p>
+        </div>
+
+        <div class="section">
+            <h2>Informasi Sekolah</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Akreditasi</h3>
+                    <p>A (Sangat Baik)</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Kurikulum</h3>
+                    <p>Kurikulum Merdeka</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Kontak & Lokasi</h2>
+            <div class="address-box">
+                <p><strong>Alamat:</strong> Jl. Candradimuka No. 42, Ambulu, Jember, Jawa Timur</p>
+                <p><strong>Kecamatan:</strong> Ambulu</p>
+                <p><strong>Telepon:</strong> (0336) 881112</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Profil SMA Negeri Ambulu | Website ini dikelola oleh Anindra
+    </footer>
+
+</body>
+</html>
